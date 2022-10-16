@@ -16,10 +16,10 @@ module.exports = {
     "storyStoreV7": true
   },
   viteFinal: (config, { configType }) => {
-    if (config === 'PRODUCTION') {
+    if (configType === 'PRODUCTION') {
       config.base = '/rocketseat-figma-react/'
     }
-
+    
     return config
   }
 }
